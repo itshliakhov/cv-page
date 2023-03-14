@@ -1,0 +1,149 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1, h2 {
+    letter-spacing: 0.1rem;
+}
+
+.resume-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 980px;
+    border: 1px solid darkgray;
+    margin: 50px auto 20px auto;
+    padding-top: 40px;
+}
+
+.resume-block__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px 50px 100px;
+}
+
+.header__info p {
+    font-size: 14px;
+    margin-top: 2px;
+}
+
+.header__image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.resume-block__main {
+    padding-top: 20px;
+}
+
+.main__contacts,
+.main__summary,
+.main__hardSkills,
+.main__courses,
+.main__languages {
+    max-width: 600px;
+    padding-left: 100px;
+}
+
+.main__contacts-block {
+    padding: 20px 0 30px 0;
+}
+
+.main__contacts-info a {
+    color: mediumpurple;
+    text-decoration: underline;
+}
+
+.main__summary p {
+    padding: 20px 0 30px 0;
+}
+
+.main__hardSkills ul {
+    padding-top: 20px;
+}
+
+.main__hardSkills li:not(:nth-child(1)) {
+    margin-top: 15px;
+}
+
+.main__hardSkills li:last-child {
+    margin-bottom: 30px;
+}
+
+.main__courses ul {
+    padding-top: 20px;
+}
+
+.main__courses li:not(:nth-child(1)) {
+    margin-top: 15px;
+}
+
+.main__courses a {
+    color: mediumpurple;
+    text-decoration: underline;
+}
+
+.main__courses li:last-child {
+    margin-bottom: 30px;
+}
+
+.main__languages ul {
+    padding-top: 15px;
+}
+
+.main__languages li:not(:nth-child(1)) {
+    margin-top: 15px;
+}
+
+.main__languages li:last-child {
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 630px) {
+
+    .resume-block {
+        padding: 0;
+    }
+
+    .resume-block__header {
+        padding: 20px 0;
+        flex-direction: column;
+    }
+
+    .main__contacts,
+    .main__summary,
+    .main__hardSkills,
+    .main__courses,
+    .main__languages {
+        padding-left: 5%;
+    }
+
+    .header__image img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .main__summary p {
+        padding: 20px 10px 30px 0;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .main__contacts,
+    .main__summary,
+    .main__hardSkills,
+    .main__courses,
+    .main__languages hr {
+        width: 85%;
+    }
+}
